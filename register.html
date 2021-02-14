@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+            <a class="navbar-brand" href="index.html">
+                Yarnspiration
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="articles.html">Articles</a>
+                    <a class="nav-link" href="chat.html">Chat</a>
+                    <a class="nav-link active" href="register.html">Register<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="about-us.html">About us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Login</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="row mx-0">
+                <div class="col">
+                    <h3>Register</h3>
+                </div>
+            </div>
+            <div class="row mt-3 mx-0">
+                <div class="col-12 col-md-6">
+                    <form class="needs-validation" novalidate>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="username-input" placeholder="Username*"
+                                        required>
+                                    <div class="invalid-feedback" id="username-error">Please provide username.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="password" class="form-control" id="psw1" placeholder="Password*"
+                                        name="up" required>
+                                    <div class="invalid-feedback" id="psw1-error"> Please provide password.</div>
+                                    <div class="invalid-feedback" id="psw1-length-error"> Password have to be minimum 8
+                                        symbols</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="password" class="form-control" id="psw2" placeholder="Retype password*"
+                                        name="up2" required>
+                                    <div class="invalid-feedback" id="psw2-error">Please retype password.</div>
+                                    <div class="invalid-feedback" id="psw-match-error">Password doesn`t match.</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="first-name-input"
+                                        placeholder="First name*" required>
+                                    <div class="invalid-feedback" id="first-name-error">Please provide your first name.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-row mx-0">
+                                <select class="custom-select" id="country-input" required>
+                                    <option value="">Country*</option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lithuani">Lithuania</option>
+                                    <option value="Estonia">Estonia</option>
+                                </select>
+                                <div class="invalid-feedback" id="country-error">Please choose country.</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="terms-conditions" required>
+                                <label class="custom-control-label" for="terms-conditions">Agree with terms and
+                                    conditions*</label>
+                                <div class="invalid-feedback" id="terms-conditions-error">Check terms and conditions.
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5 py-3 align-items-end border-top">
+        <div class="container">
+            <p>Website created using Bootstrap</p>
+            <p>Images from pixabay.com</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+body, .page-link{
+  background-color:  whitesmoke;
+}
+
+header, footer, .card {
+  background-color:  #FFDD55;
+}
+
+.page-link{
+  background-color:  whitesmoke;
+  color: black;
+}
+
+#message-output {
+  background-color: white;
+}
+.btn-primary {
+  background-color: #FFDD55;
+  color: black;
+  border: gray;
+}
+
+.breadcrumb {
+  background-color: whitesmoke;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+.card-link, .breadcrumb-item a {
+  color: black;
+  font-weight: bold;
+}
+
+/*---------- ARTICLE-1 ----------------------------------------------------------------*/
+.gallery img {
+  max-width: 100%;
+}
+
+/*---------- CHAT ----------------------------------------------------------------*/
+#message-output {
+  height: 300px;
+  overflow: auto;
+}
+
+#message-output span:nth-of-type(odd){
+  padding: 0 3%;
+  margin: 0;
+  font-weight: bold;
+  background-color: #FFDD55;
+}
+
+#message-output span:nth-of-type(even) {
+  padding: 0 3%;
+}
+
+#message-output p {
+  padding: 1% 3%;
+  background-color: #FFDD55;
+}
+
+/*---------- ABOUT-US ------------------------------------------------------------------*/
+.tab-img {
+  max-width: 100%;
+}
+
+.nav-tabs{
+  background-color: #FFDD55;
+  font-weight: bold;
+}
+
+#tab-1-tab, #tab-2-tab, #tab-3-tab {
+  color: black;
+}
